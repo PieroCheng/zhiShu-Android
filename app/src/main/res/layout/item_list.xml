@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"  >
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/material_blue_grey_800" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:singleLine="true"
+        android:text="用户名称"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginRight="10dp"
+        android:drawablePadding="5dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="20130240122"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_avatar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="我有一本高数书，我从来也不看耶~~~~来跟我唱：人群中最亮的星~~"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_beforeprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_describe"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:text="￥"
+        android:textColor="#FF0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_describe"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/tv_beforeprice"
+        android:text="1688"
+        android:textColor="#FF0000"
+        android:textSize="30sp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     android:layout_marginLeft="10dp"
+    android:layout_below="@+id/tv_price"
+    android:id="@+id/ll_Nine">
+
+<com.example.uchihakirito.zhishu.NoScrollGridView
+    android:focusable="false"
+    android:listSelector="#00000000"
+    android:id="@+id/gridview"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:horizontalSpacing="2.5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="3dp"
+   android:numColumns="3"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="2.5dp">
+
+</com.example.uchihakirito.zhishu.NoScrollGridView>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_Nine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#9ED558"
+        android:drawablePadding="5dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="大一"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_Nine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_grade"
+        android:background="#7CC7D5"
+        android:drawablePadding="5dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="高等数学"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_Nine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_subject"
+        android:background="#B26E6C"
+        android:drawablePadding="5dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="北京信息科技大学"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tv_time"
+
+        android:background="#fff7f113"
+        android:drawablePadding="5dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="13811111111"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_below="@id/tv_describe"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_collection_unselected"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/tv_break_2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/tv_grade"
+        android:background="#ADADAD" />
+
+
+</RelativeLayout>

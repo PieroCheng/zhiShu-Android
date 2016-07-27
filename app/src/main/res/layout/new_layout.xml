@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#9CCC65"
+        android:gravity="top"
+        android:id="@+id/rl_actionbar">
+
+        <Button
+            android:id="@+id/post_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="发布图书"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/textsize_18" />
+
+        <TextView
+            android:id="@+id/post_send"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="12.0dip"
+            android:singleLine="true"
+            android:text="确定"
+
+            android:textSize="@dimen/textsize_15" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/post_edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/layout_new_book_subject"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="学科"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/layout_new_book_describe"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="描述一下书籍吧"
+            android:maxLength="140"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:id="@+id/layout_new_book_testsize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:text="0/140"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/layout_new_book_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="跟我们说说你想要的价位"
+            android:paddingBottom="12dp"
+            android:paddingTop="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_new_book_grade"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="nianji"
+            android:paddingBottom="12dp"
+            android:paddingTop="5dp"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/post_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/post_pic_container"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.example.uchihakirito.zhishu.FilterImageView
+                    android:id="@+id/post_add_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/post_add_pic" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/post_pic_remain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:text="0/9"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#cacaca" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pagerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.example.uchihakirito.zhishu.AlbumViewPager
+            android:id="@+id/albumviewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fffcfcfd" />
+
+        <include
+            android:id="@+id/album_item_header_bar"
+            layout="@layout/album_item_header_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_action_bar_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.uchihakirito.zhishu.ReflashListView
+            android:id="@+id/lv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:listSelector="#00000000"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_nocomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="该图书还没有人评论哦！"
+                android:textSize="25sp"
+                android:visibility="gone"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffdcdcdc"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:id="@+id/et_commit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+
+                />
+
+            <Button
+                android:id="@+id/bt_send"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:background="#9ccc65"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="发送"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

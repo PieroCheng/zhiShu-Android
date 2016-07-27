@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/theme_bg_color">
+
+    <ImageView
+        android:id="@+id/logo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_1"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal"
+            android:background="@drawable/about_mid_bg">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_user" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="用户名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:background="@drawable/about_mid_bg">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_pwd" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="密码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwd_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pwd"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:background="@drawable/about_mid_bg">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_pwd" />
+
+            <EditText
+                android:id="@+id/et_password_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="请再输一次密码" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pwd_again"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:background="#9ccc65"
+            android:text="现在就来注册吧"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="© zhiShu All Rights Reserved"
+        android:textColor="#888888"
+        android:textSize="10dp" />
+
+
+</RelativeLayout>
