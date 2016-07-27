@@ -1,2 +1,6 @@
 # zhiShu-Android
 ==SECOND PRICE in China five provinces (municipalities and autonomous regions) and Hong Kong, Macao and Taiwan Students' Computer Application Contest==
+
+With the social progress and the increase in demand for high-quality personnel, the content of the courses to learn continuously increase, leading to today's students do not have too much time spent on reading, so how to read a good book in a short time, reading to truly help books is that they have a pressing an important issue. Although the network is now developed, universal, but that is in the interests of capital, driven by its resources cohabitation, excessive repetition, really good, fine outstanding books, materials tend to be obliterated. It is difficult for students to find their own simple really useful book.
+For people who have outstanding books, a year after you no longer use is a very wasteful behavior, waste of money, a waste of resources.
+We know that the book is a profound analysis of the phenomenon of the current team and find solutions. Establish a platform for students to share their own side of the books, teaching materials, together with the comment function for discussion exchange, online books and materials by the student concerned discipline, grade, school, to find a good book to their advantage .
